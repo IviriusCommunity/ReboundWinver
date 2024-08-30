@@ -9,8 +9,8 @@
 
   <Identity
     Name="039b9731-7b33-49de-bb09-5b81d5978d1c"
-    Publisher="CN=Lenovo"
-    Version="1.0.0.0" />
+    Publisher="CN=Ivirius"
+    Version="0.0.1.0" />
 
   <mp:PhoneIdentity PhoneProductId="039b9731-7b33-49de-bb09-5b81d5978d1c" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
@@ -39,7 +39,7 @@
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"  Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>

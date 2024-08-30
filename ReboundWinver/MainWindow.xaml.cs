@@ -17,6 +17,7 @@ using System.Management;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -40,6 +41,7 @@ namespace ReboundWinver
             this.AppWindow.DefaultTitleBarShouldMatchAppModeTheme = true;
             this.IsMaximizable = false;
             this.IsMinimizable = false;
+            this.MinWidth = 650;
             this.SetWindowSize(650, 690);
             this.Title = "About Windows";
             this.IsResizable = false;
@@ -48,6 +50,15 @@ namespace ReboundWinver
             User.Text = GetCurrentUserName();
             Version.Text = GetDetailedWindowsVersion();
             LegalStuff.Text = GetLegalInfo();
+            Load();
+        }
+
+        public async void Load()
+        {
+            await Task.Delay(100);
+
+            this.SetWindowSize(WinverPanel.ActualWidth + 60, 690);
+
         }
 
         public static string GetDetailedWindowsVersion()

@@ -9,7 +9,7 @@
     xmlns:winuiex="using:WinUIEx"
     mc:Ignorable="d">
     <Grid>
-        <StackPanel Orientation="Horizontal" Spacing="75" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="-15">
+        <StackPanel Orientation="Horizontal" Spacing="75" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="-15" x:Name="WinverPanel">
             <Path VerticalAlignment="Center" Data="M 0 1 C 0 0.5 0.5 0 1 0 L 7 0 L 7 7 L 0 7 M 1 6 M 8 0 L 14 0 C 14.5 0 15 0.5 15 1 L 15 7 L 8 7 M 9 6 M 7 8 L 0 8 L 0 14 C 0 14.5 0.5 15 1 15 L 7 15 M 6 14 M 8 8 L 15 8 L 15 14 C 15 14.5 14.5 15 14 15 L 8 15 M 9 14 M 0 0 L 16 16">
                 <Path.Fill>
                     <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
@@ -55,7 +55,7 @@
         </InfoBar>
         <InfoBar IsOpen="True" Margin="15, 410, 15, 0" IsClosable="False" Title="Rebound 11">
             <StackPanel Margin="0, 0, 25, 25">
-                <TextBlock Text="Version 0.0.1 ALPHA" TextWrapping="WrapWholeWords" x:Name="ReboundVer"/>
+                <TextBlock Text="Version 0.0.2 ALPHA" TextWrapping="WrapWholeWords" x:Name="ReboundVer"/>
                 <TextBlock Text=" "/>
                 <TextBlock Text="Rebound 11 is a Windows mod that does not interfere with the system. The current Windows installation contains additional apps to run Rebound 11." TextWrapping="WrapWholeWords"/>
             </StackPanel>
