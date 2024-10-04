@@ -14,9 +14,8 @@
                 <Path.Fill>
                     <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
                         <LinearGradientBrush.GradientStops>
-                            <GradientStop Color="{StaticResource SystemAccentColorLight3}"/>
-                            <GradientStop Color="{StaticResource SystemAccentColorLight1}" Offset="0.5"/>
-                            <GradientStop Color="{StaticResource SystemAccentColorDark1}" Offset="1"/>
+                            <GradientStop Color="#a8f4ff"/>
+                            <GradientStop Color="#0073d5" Offset="1"/>
                         </LinearGradientBrush.GradientStops>
                     </LinearGradientBrush>
                 </Path.Fill>
@@ -24,17 +23,7 @@
                     <ScaleTransform ScaleX="5" ScaleY="5"/>
                 </Path.RenderTransform>
             </Path>
-            <TextBlock Text="Windows 11" x:Name="WindowsVer" FontSize="45" FontWeight="Bold" VerticalAlignment="Center" Margin="0, 50, 0, 0">
-                <TextBlock.Foreground>
-                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
-                        <LinearGradientBrush.GradientStops>
-                            <GradientStop Color="{StaticResource SystemAccentColorLight3}"/>
-                            <GradientStop Color="{StaticResource SystemAccentColorLight1}" Offset="0.5"/>
-                            <GradientStop Color="{StaticResource SystemAccentColorDark1}" Offset="1"/>
-                        </LinearGradientBrush.GradientStops>
-                    </LinearGradientBrush>
-                </TextBlock.Foreground>
-            </TextBlock>
+            <TextBlock Text="Windows 11" x:Name="WindowsVer" FontSize="45" FontWeight="Bold" VerticalAlignment="Center" Margin="0, 50, 0, 0"/>
         </StackPanel>
         <InfoBar IsOpen="True" Margin="15, 150, 15, 0" IsClosable="False" Title="Microsoft Windows">
             <StackPanel Margin="0, 0, 25, 25">
@@ -55,7 +44,7 @@
         </InfoBar>
         <InfoBar IsOpen="True" Margin="15, 410, 15, 0" IsClosable="False" Title="Rebound 11">
             <StackPanel Margin="0, 0, 25, 25">
-                <TextBlock Text="Version 0.0.2 ALPHA" TextWrapping="WrapWholeWords" x:Name="ReboundVer"/>
+                <TextBlock Text="Version 0.0.3 ALPHA" TextWrapping="WrapWholeWords" x:Name="ReboundVer"/>
                 <TextBlock Text=" "/>
                 <TextBlock Text="Rebound 11 is a Windows mod that does not interfere with the system. The current Windows installation contains additional apps to run Rebound 11." TextWrapping="WrapWholeWords"/>
             </StackPanel>
